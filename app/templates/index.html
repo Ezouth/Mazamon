@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home - {{ super() }}
+{% endblock %}
+
+{% block app_content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <img src="http://placehold.it/103x31" alt="Placeholder" class="logo">
+          <div class="border">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Sign In</label>
+                <small class="email-text">Email (phone for mobile accounts)</small>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div> <!-- Ending div for input -->
+              <button type="submit" class="btn-continue">Continue</button>
+              <!-- <span class="button-text">Continue</span> -->
+              <div class="need-help">
+                <img src="../static/media/image/pointer.png" alt="pointer" class="pointer">
+                <a href="#" class="help">Need Help?</a>
+                <!-- <p class="help">Need Help?</p> -->
+              </div> <!-- Ending div for help -->
+            </form>
+          </div> <!-- Ending div for form border -->
+          <div class="divider">
+            <h5>------------------------------New to Mazamon?------------------------------</h5>
+          </div>
+          <div class="account-btn">
+            <button type="submit" class="create-account">Create your Mazamon account</button>
+          </div>
+        </div> <!-- Ending div for column -->
+      </div> <!-- Ending div for row -->
+    </div> <!-- Ending div for container -->
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="links">
+            <ul>
+              <li><a href="#">Conditions of Use</a></li>
+              <li><a href="#">Privacy Notice</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>&copy; 1996-2018, Amazon.com, Inc. or its affiliates</p>
+          </div>
+        </div> <!-- Ending div for column -->
+      </div> <!-- Ending div for row -->
+    </footer>
+{% endblock %}
